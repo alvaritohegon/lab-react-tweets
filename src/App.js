@@ -8,7 +8,7 @@ const tweetsArray = [
       image: "https://i.imgur.com/b0EdHVV.jpg",
       handle: "dog_feelings",
     },
-    timestamp: "1h ago",
+    timestamp: "1h ago", 
     message:
       "the human likes to say. that i live here rent free. but i would argue. this housing accommodation. is my payment. for a lifetime of love. and excellent company",
   },
@@ -37,7 +37,9 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={tweetsArray[0]}/>
+      <Tweet tweet={tweetsArray[1]}/>
+      <Tweet tweet={tweetsArray[2]}/>
     </div>
   );
 }
